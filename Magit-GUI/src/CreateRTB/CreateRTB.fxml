@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="125.0" prefWidth="332.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CreateRTB.CreateRTBController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="125.0" prefWidth="332.0" spacing="10.0">
+         <children>
+            <Label fx:id="m_PointedByMessageLabel" alignment="CENTER" prefHeight="26.0" prefWidth="318.0" text="This commit pointed by RB!" textAlignment="CENTER" wrapText="true" />
+            <Label fx:id="m_MessageLabel" alignment="CENTER" cache="true" contentDisplay="CENTER" prefHeight="24.0" prefWidth="324.0" text="Do you want to create RTB or regular branch? " textAlignment="CENTER" wrapText="true" />
+            <HBox alignment="CENTER" prefHeight="41.0" prefWidth="288.0" spacing="10.0">
+               <children>
+                  <Button fx:id="m_CreateRTBAfterRBBtn" mnemonicParsing="false" onAction="#CreateRTB" text="Create RTB after RB" />
+                  <Button fx:id="m_CreateRegularBranchBtn" mnemonicParsing="false" onAction="#CreateRegularBranch" text="Create regular branch" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>

@@ -1,0 +1,156 @@
+#windows7 {
+    -fx-background-color:
+            #a7d9f5,
+            linear-gradient(#aafcfc, #a7d9f5),
+            linear-gradient(#f2f2f2 0%, #ebebeb 49%, #dddddd 50%, #aacfcf 100%);
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 3,2,1;
+    -fx-padding: 3 5 3 5;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+#windows7:hover {
+    -fx-background-color:
+            #3c7fb1,
+            linear-gradient(#fafdfe, #e8f5fc),
+            linear-gradient(#eaf6fd 0%, #d9f0fc 49%, #bee6fd 50%, #a7d9f5 100%);
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 3,2,1;
+    -fx-padding: 3 15 3 15;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.label{
+    -fx-text-fill: #150041;
+    -fx-font-weight: bold;
+}
+
+.topstackpane{
+    /*-fx-background-color: #65b1b0;*/
+    -fx-background-color: #1e8e97;
+}
+
+.treebachground{
+    -fx-background-color: rgba(200, 199, 201, 0.51);
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.myTree .tree-cell {
+    -fx-background-color: rgba(200, 199, 201, 0.51);
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+}
+
+.name-text {
+    -fx-font-size: 32px;
+    -fx-text-fill: #008080;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+.outline.label .text {
+// -fx-text-alignment: outside;
+    -fx-stroke: black;
+    -fx-stroke-width: 1px;
+}
+
+.text-field-location{
+    -fx-text-fill: BLUE;
+}
+
+#list-label{
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+    -fx-background-color: #1872b1;
+}
+
+.button{
+    -fx-font-weight: bold;
+    -fx-background-color: #144d7e;
+    -fx-background-radius: 10;
+    -fx-background-insets: 0;
+    -fx-text-fill: black;
+    -fx-wrap-text: true;
+}
+
+.button:hover {
+    -fx-background-color:
+            #3c7fb1,
+            linear-gradient(#fafdfe, #e8f5fc),
+            linear-gradient(#eaf6fd 0%, #d9f0fc 49%, #bee6fd 50%, #a7d9f5 100%);
+    -fx-padding: 3 15 3 15;
+}
+
+.menu-item{
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+
+}
+
+.menu-button{
+    -fx-wrap-text: true;
+}
+
+#head-branch{
+    -fx-text-fill: rgba(13, 249, 245, 0.57);
+    /*-fx-wrap-text: true;*/
+}
+
+#rb{
+    -fx-text-fill: #a098e9;
+    /*-fx-wrap-text: true;*/
+}
+
+#rtb{
+    -fx-text-fill: #ff0003;
+    /*-fx-wrap-text: true;*/
+}
+
+#regular-branch{
+    -fx-text-fill: #15701f;
+    /*-fx-wrap-text: true;*/
+}
+
+.timestamp-label {
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.message-label {
+    /*-fx-text-fill: deeppink;*/
+    -fx-text-fill: #03c2d6;
+    -fx-font-weight: bold;
+
+    -fx-font-size: 18px;
+}
+
+.committer-label {
+    /*-fx-text-fill: darkgreen;*/
+    -fx-text-fill: #1165bc;
+    -fx-font-weight: bold;
+
+    -fx-font-size: 14px;
+}
+
+.single-commit-row-container:hover {
+    -fx-border-color: black;
+    -fx-background-color: #c6ebf5;
+    -fx-background-radius: 3px;
+}
+
+/*override separator style*/
+.separator .line {
+    -fx-border-color: black;
+    -fx-border-width: 1;
+}
+
+.circle{
+    -fx-fill: #087fee
+}

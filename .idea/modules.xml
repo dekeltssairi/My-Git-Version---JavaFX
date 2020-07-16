@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DataStructures/DataStructures.iml" filepath="$PROJECT_DIR$/DataStructures/DataStructures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Magit-GUI/Magit-GUI.iml" filepath="$PROJECT_DIR$/Magit-GUI/Magit-GUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Magit-Logic/Magit-Logic.iml" filepath="$PROJECT_DIR$/Magit-Logic/Magit-Logic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/My Amazing Git GUI Improve the Binding.iml" filepath="$PROJECT_DIR$/.idea/My Amazing Git GUI Improve the Binding.iml" />
+    </modules>
+  </component>
+</project>

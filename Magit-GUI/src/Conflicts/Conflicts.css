@@ -1,0 +1,69 @@
+.label{
+    -fx-text-fill: black;
+    -fx-font: 14px Arial;
+    -fx-font-weight: bold;
+}
+
+.button{
+    -fx-background-color:
+            #000000,
+            linear-gradient(#7ebcea, #2f4b8f),
+            linear-gradient(#426ab7, #263e75),
+            linear-gradient(#395cab, #223768);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+
+}
+
+.button:hover{
+    -fx-background-color:
+            #000000,
+            linear-gradient(#7ebcea, #2f4b8f),
+            linear-gradient(#426ab7, #263e75),
+            linear-gradient(#395cab, #223768);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 10 5 10 5;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-weight:bold;
+}
+
+.framed.text-area {
+    -fx-background-size: stretch ;
+    -fx-background-image: url("Theirs.jpg");
+}
+
+.framed.text-area .scroll-pane .viewport,
+.framed.text-area .content {
+    -fx-background-color: null;
+}
+
+.framed2.text-area {
+    -fx-background-size: stretch ;
+    -fx-background-image: url("Ours.jpg");
+}
+
+.framed2.text-area .scroll-pane .viewport,
+.framed2.text-area .content {
+    -fx-background-color: null;
+}
+
+.framed3.text-area {
+    -fx-background-size: stretch ;
+    -fx-background-image: url("Ancestor.jpg");
+}
+
+.framed3.text-area .scroll-pane .viewport,
+.framed3.text-area .content {
+    -fx-background-color: null;
+}
+
+.conflict-text{
+    -fx-text-fill: #ff17de;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}

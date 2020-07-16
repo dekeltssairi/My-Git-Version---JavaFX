@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact name="DataStructures:jar">
+    <output-path>$PROJECT_DIR$/Magit-Logic/out/artifacts/DataStructures_jar</output-path>
+    <root id="root">
+      <element id="archive" name="DataStructures.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="C:/jars3/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="DataStructures" />
+      </element>
+    </root>
+  </artifact>
+</component>

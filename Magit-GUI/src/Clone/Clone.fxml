@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="261.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Clone.CloneController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="258.0" prefWidth="400.0" spacing="10.0">
+         <children>
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" text="Please enter full path to exist repository you want to clone: " textAlignment="CENTER" wrapText="true" />
+            <TextField fx:id="m_PathToRepositoryToClone" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="375.0" />
+            <Label cache="true" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" text="Please enter full path to the destination directory to which you want to clone the repository:" textAlignment="CENTER" wrapText="true" VBox.vgrow="ALWAYS" />
+            <TextField fx:id="m_PathToDestinationToClone" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="375.0" />
+            <Label alignment="CENTER" cache="true" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" text="Please enter the name of repository:" textAlignment="CENTER" wrapText="true" />
+            <TextField fx:id="m_RepositoryName" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="375.0" />
+            <Button fx:id="m_CloneBtn" mnemonicParsing="false" onAction="#CloneRepositoryBtn" text="Clone" />
+         </children>
+      </VBox>
+   </children>
+</Pane>

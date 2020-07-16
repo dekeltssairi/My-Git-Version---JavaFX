@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="165.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoadRepositoryFromXML.AlreadyExistRepositoryInPath.AlreadyExistRepositoryInPathController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="165.0" prefWidth="400.0" spacing="7.0">
+         <children>
+            <Label prefHeight="22.0" prefWidth="348.0" text="This repository location already contain some another repository!" />
+            <Label prefHeight="22.0" prefWidth="173.0" text="How do you want to continue? " />
+            <Button fx:id="m_CancleOperation" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#CancleTheOperationBtnAction" prefHeight="42.0" prefWidth="333.0" text="To stay with exist repository and cancle your XML repository load operation" textAlignment="CENTER" wrapText="true">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Button>
+            <Button fx:id="m_OverrideAndLoadNewOne" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#OverrideCurrentRepositoryAndLoadNewBtnAction" prefHeight="42.0" prefWidth="333.0" text="To override the exist repositoy and load your new repository from the XML" textAlignment="CENTER" wrapText="true">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</Pane>

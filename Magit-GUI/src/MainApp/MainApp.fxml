@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane id="root" minHeight="200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainApp.MainAppController">
+    <stylesheets>
+        <URL value="@MainApp.css" />
+    </stylesheets>
+    <top>
+      <StackPane prefHeight="130.0" prefWidth="971.0" styleClass="topstackpane" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane prefHeight="168.0" prefWidth="971.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints />
+                <RowConstraints maxHeight="113.0" minHeight="0.0" prefHeight="24.666664123535156" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="167.00001525878906" minHeight="10.0" prefHeight="130.33333587646484" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                    <MenuBar prefHeight="19.0" prefWidth="971.0" GridPane.rowIndex="1">
+                        <menus>
+                            <Menu mnemonicParsing="false" text="File">
+                                <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#SetUserNameWindow" text="Set UserName" />
+                                    <Menu mnemonicParsing="false" text="Load Repository">
+                                        <items>
+                                            <MenuItem mnemonicParsing="false" onAction="#LoadRepositoryFromXMLWindow" text="From Xml" />
+                                            <MenuItem mnemonicParsing="false" onAction="#LoadExistRepositoryWindow" text="From PC" />
+                                        </items>
+                                    </Menu>
+                                    <MenuItem mnemonicParsing="false" onAction="#InitializeRepositoryWindow" text="Initilize Repository" />
+                                    <MenuItem fx:id="m_Close" mnemonicParsing="false" onAction="#Close" text="Close" />
+                                </items>
+                            </Menu>
+                            <Menu mnemonicParsing="false" text="Collaboration">
+                                <items>
+                                    <MenuItem fx:id="m_CloneMenuItem" mnemonicParsing="false" onAction="#Clone" text="Clone" />
+                              <MenuItem fx:id="m_FetchMenuItem" mnemonicParsing="false" onAction="#Fetch" text="Fetch" />
+                              <MenuItem fx:id="m_PushMenuItem" mnemonicParsing="false" onAction="#Push" text="Push" />
+                              <MenuItem fx:id="m_PullMenuItem" mnemonicParsing="false" onAction="#Pull" text="Pull" />
+                                </items>
+                            </Menu>
+                        </menus>
+                    </MenuBar>
+                  <HBox prefHeight="147.0" prefWidth="971.0" spacing="10.0" GridPane.rowIndex="2">
+                     <children>
+                        <VBox alignment="CENTER_LEFT" prefHeight="125.0" prefWidth="349.0" spacing="4.0">
+                           <children>
+                                  <HBox alignment="CENTER_LEFT" prefHeight="28.0" prefWidth="300.0" spacing="10.0">
+                                      <children>
+                                    <ImageView fitHeight="34.0" fitWidth="39.0">
+                                       <image>
+                                          <Image url="@username.png" />
+                                       </image>
+                                    </ImageView>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="116.0" text="UserName:" />
+                                    <TextField fx:id="m_UserName" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="156.0" />
+                                      </children>
+                                  </HBox>
+                              <Button id="windows7" mnemonicParsing="false" onAction="#SetUserNameWindow" text="Change Username" />
+                              <RadioButton fx:id="m_AnimationRadioBtn" mnemonicParsing="false" prefHeight="17.0" prefWidth="114.0" styleClass="label" text="Animations" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="125.0" prefWidth="639.0">
+                           <children>
+                              <fx:include fx:id="m_RepositoryPresentation" source="../RepositoryPresentation/RepositoryPresentation.fxml" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </GridPane>
+         </children>
+      </StackPane>
+   </top>
+   <right>
+      <fx:include fx:id="m_BranchesList" maxHeight="1.7976931348623157E308" minHeight="50.0" source="../BranchesList/BranchesList.fxml" BorderPane.alignment="CENTER" />
+   </right>
+   <center>
+      <fx:include fx:id="m_CommitTree" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="50.0" minWidth="100.0" source="../visual/CommitTree/CommitTree.fxml" />
+   </center>
+   <left>
+      <SplitPane dividerPositions="0.4595959595959596" maxWidth="350.0" minHeight="50.0" minWidth="150.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane maxWidth="145.0" minWidth="145.0">
+               <children>
+                  <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="444.0" prefWidth="150.0" styleClass="topstackpane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <content>
+                        <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" prefHeight="500.0" prefWidth="148.0" spacing="3.0">
+                           <children>
+                              <Label id="list-label" alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="23.0" prefWidth="148.0" styleClass="VBox" text="Repository" wrapText="true" />
+                              <Button alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" minHeight="-Infinity" mnemonicParsing="false" onAction="#InitializeRepositoryWindow" text="Initialize Repository" wrapText="true" VBox.vgrow="ALWAYS" />
+                              <Button alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" minHeight="-Infinity" mnemonicParsing="false" onAction="#LoadExistRepositoryWindow" text="Load Repository from PC" wrapText="true" />
+                              <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" mnemonicParsing="false" onAction="#LoadRepositoryFromXMLWindow" text="Load Repository from XML" wrapText="true" />
+                              <Label id="list-label" alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="23.0" prefWidth="148.0" text="Files" wrapText="true" />
+                              <Button fx:id="m_CommitBtn" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" mnemonicParsing="false" onAction="#CommitBtn" text="Commit" wrapText="true" />
+                              <Button fx:id="m_ShowWCStatusBtn" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" mnemonicParsing="false" onAction="#ShowWorkingCopyOpenChangesButtonClicked" text="Show WC status" wrapText="true" />
+                              <Label id="list-label" alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="23.0" prefWidth="148.0" text="Branches" wrapText="true" />
+                              <Button fx:id="m_AddBranchBtn" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" mnemonicParsing="false" onAction="#AddBranchBtn" text="Add new branch" wrapText="true" />
+                              <Label id="list-label" alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="23.0" prefWidth="148.0" text="Collaboration" wrapText="true" />
+                              <Button fx:id="m_CloneBtn" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" mnemonicParsing="false" onAction="#Clone" text="Clone" wrapText="true" />
+                              <Button fx:id="m_FetchBtn" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" mnemonicParsing="false" onAction="#Fetch" text="Fetch" wrapText="true" />
+                              <Button fx:id="m_PullBtn" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" mnemonicParsing="false" onAction="#Pull" text="Pull" wrapText="true" />
+                              <Button fx:id="m_PushBtn" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" mnemonicParsing="false" onAction="#Push" text="Push" wrapText="true" />
+                              <Label id="list-label" alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="23.0" prefWidth="148.0" text="Skin" wrapText="true" />
+                              <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" mnemonicParsing="false" onAction="#SwitchSkin" text="Change Themes" wrapText="true" />
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+            <StackPane>
+               <children>
+                  <fx:include fx:id="m_CurrentCommitFileSystem" minHeight="50.0" minWidth="195.0" prefWidth="195.0" source="../CurrentCommitSystemFiles/CurrentCommitSystemFiles.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </StackPane>
+        </items>
+      </SplitPane>
+   </left>
+</BorderPane>

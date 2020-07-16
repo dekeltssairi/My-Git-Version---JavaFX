@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="99.0" prefWidth="536.0" styleClass="topstackpane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RepositoryPresentation.RepositoryPresentationController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="68.0" prefWidth="461.0" spacing="5.0">
+         <children>
+            <Label fx:id="m_ReositoryName" alignment="CENTER" prefHeight="47.0" prefWidth="504.0" text="Repository name">
+               <styleClass>
+                  <String fx:value="outline" />
+                  <String fx:value="name-text" />
+               </styleClass></Label>
+            <HBox alignment="CENTER" prefHeight="57.0" prefWidth="446.0" spacing="10.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="74.0" text="Location: " />
+                  <TextField fx:id="m_ReositoryLocation" editable="false" prefHeight="32.0" prefWidth="381.0" styleClass="text-field-location" stylesheets="@../MainApp/MainApp.css" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

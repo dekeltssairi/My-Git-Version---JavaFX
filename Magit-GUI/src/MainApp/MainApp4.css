@@ -1,0 +1,171 @@
+#windows7 {
+    -fx-background-color:
+            #ea8f52,
+            linear-gradient(rgba(255, 134, 22, 0.7), #eda156),
+            linear-gradient(#f2f2f2 0%, #ebebeb 49%, #dddddd 50%, rgba(237, 155, 75, 0.84) 100%);
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 3,2,1;
+    -fx-padding: 3 5 3 5;
+    -fx-text-fill: #4b4b4b;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+}
+
+#windows7:hover {
+    -fx-background-color:
+            #a95000,
+            linear-gradient(#bbbdbe, rgba(247, 160, 20, 0.65)),
+            linear-gradient(#bbbdbe 0%, rgba(228, 150, 56, 0.8) 49%, #d58b47 50%, #f7b372 100%);
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 3,2,1;
+    -fx-padding: 3 5 3 5;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.label {
+    -fx-text-fill: #fb8c00;
+    -fx-font-family: "Cooper Black";
+    -fx-font-size: 14px;
+}
+
+.topstackpane{
+    /*-fx-background-color: #65b1b0;*/
+    -fx-background-color: #db6a00;
+}
+
+.treebachground{
+    -fx-background-color: rgba(200, 199, 201, 0.51);
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.myTree .tree-cell {
+    -fx-background-color: rgba(200, 199, 201, 0.51);
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+}
+
+.name-text {
+    -fx-font-size: 38px;
+    -fx-text-fill: rgba(226, 119, 53, 0.93);
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+.outline.label .text {
+    -fx-font-family: "AR DELANEY";
+    -fx-stroke: black;
+    -fx-stroke-width: 0.5px;
+}
+
+.text-field-location{
+    -fx-text-fill: BLUE;
+}
+
+#list-label{
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+    -fx-background-color: #ee5500;
+}
+
+.button{
+    -fx-background-color:
+            #000000,
+            linear-gradient(#f7b372, rgba(226, 61, 0, 0.78)),
+            linear-gradient(#d76e30, #c94c00),
+            linear-gradient(#c65800, #b24300);
+    -fx-background-insets: 0,1,2,0;
+    -fx-background-radius: 4,7,4,7;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+
+
+    /*    -fx-font-weight: bold;
+        -fx-background-color: #639760;
+        -fx-background-radius: 10;
+        -fx-background-insets: 0;
+        -fx-text-fill: black;*/
+}
+
+.button:hover {
+    -fx-background-color:
+            #a95000,
+            linear-gradient(#bbbdbe, rgba(247, 160, 20, 0.65)),
+            linear-gradient(#bbbdbe 0%, #e49638 49%, #d58b47 50%, #f7b372 100%);
+    -fx-padding: 3 15 3 15;
+}
+
+.menu-item{
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+}
+
+.menu-button{
+    -fx-wrap-text: true;
+}
+
+#head-branch{
+    -fx-text-fill: rgba(13, 249, 245, 0.57);
+    -fx-font-size: 11;
+    -fx-font-weight: bold;
+}
+
+#rb{
+    -fx-text-fill: #a098e9;
+    -fx-font-size: 11;
+    -fx-font-weight: bold;
+}
+
+#rtb{
+    -fx-text-fill: #ff0003;
+    -fx-font-size: 11;
+    -fx-font-weight: bold;
+}
+
+#regular-branch{
+    -fx-text-fill: #005300;
+    -fx-font-size: 11;
+    -fx-font-weight: bold;
+}
+
+.timestamp-label {
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.message-label {
+    /*-fx-text-fill: deeppink;*/
+    -fx-text-fill: rgba(219, 133, 42, 0.81);
+    -fx-font-weight: bold;
+
+    -fx-font-size: 18px;
+}
+
+.committer-label {
+    /*-fx-text-fill: darkgreen;*/
+    -fx-text-fill: #be601c;
+    -fx-font-weight: bold;
+
+    -fx-font-size: 14px;
+}
+
+.single-commit-row-container:hover {
+    -fx-border-color: black;
+    -fx-background-color: #f5e0b2;
+    -fx-background-radius: 3px;
+}
+
+/*override separator style*/
+.separator .line {
+    -fx-border-color: black;
+    -fx-border-width: 1;
+}
+
+.circle{
+    -fx-fill: #eb6f00
+}

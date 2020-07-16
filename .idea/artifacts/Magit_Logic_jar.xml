@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact name="Magit-Logic:jar">
+    <output-path>$PROJECT_DIR$/Magit-Logic/out/artifacts/Magit_Logic_jar</output-path>
+    <root id="root">
+      <element id="archive" name="Magit-Logic.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="C:/jars2/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="Magit-Logic" />
+        <element id="module-output" name="DataStructures" />
+      </element>
+      <element id="file-copy" path="$PROJECT_DIR$/Magit-Logic/src/lib/commons-codec-1.12.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/Magit-Logic/src/lib/fxgraph-0.0.3.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/Magit-Logic/src/lib/AncestorFinder.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/Magit-Logic/src/lib/commons-collections4-4.3.jar" />
+      <element id="library" level="project" name="AncestorFinder" />
+      <element id="file-copy" path="$PROJECT_DIR$/Magit-Logic/src/lib/commons-io-2.6.jar" />
+    </root>
+  </artifact>
+</component>

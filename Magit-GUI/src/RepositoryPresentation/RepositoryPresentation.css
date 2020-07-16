@@ -1,0 +1,25 @@
+/*
+.location-text{
+    -fx-text-fill: #150041;
+}
+
+.label-name{
+    -fx-font-size: 12px;
+    -fx-text-fill: #008080;
+    -fx-font-family: "Arial Black";
+}
+.welcome-text {
+    -fx-font-size: 32px;
+    -fx-text-fill: #008080;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+.outline.label.text {
+   // -fx-text-alignment: outside;
+    -fx-stroke: black;
+    -fx-stroke-width: 1px;
+}
+
+.text-field{
+    -fx-text-fill: BLUE;
+}*/
